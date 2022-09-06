@@ -10,25 +10,37 @@
     <!--Tailwind CDN-->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="px-12">
     <!--Header Section Start-->
     <header>
         <section class="flex justify-center  py-10">
             <div class="form-control w-1/2 max-w-xs">
                 <label class="label">
-                  <span class="label-text">Search Your Product</span>
-                  <span class="label-text-alt">Press<kbd class="kbd kbd-sm">Enter</kbd>
+                  <span class="label-text fw-bold">Search Your Product</span>
+                  <span class="label-text-alt fw-bold">Press<kbd class="kbd kbd-sm">Enter</kbd>
                   </span>
                 </label>
-                <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs" />
+                <input type="text" id="input-field" placeholder="Search here" class="input input-bordered w-100 max-w-xs" />
               </div>
         </section>
     </header>
     <!--Header Section End-->
     
     <!--Main Section Start-->
-    <main>
-        
+    <main class="container-fluid ">
+        <section class="nav-menu">
+            <div class="flex">
+                <!--Category Menu-->
+                <div class="flex-none">
+                    <ul id="category-item" class="menu bg-secondary text-secondary-content p-2 rounded-box">
+
+                    </ul>
+                </div>
+                <div class="grow">
+                  02
+                </div>
+              </div>
+        </section>
     </main>
     <!--Main Section End-->
 
