@@ -10,43 +10,81 @@
     <!--Tailwind CDN-->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="px-12"  >
+<body>
     <!--Header Section Start-->
     <header>
-        <section class="flex justify-center  py-10">
+        <section class="flex justify-center  pt-10">
             <div class="form-control w-1/2 max-w-xs">
                 <label class="label">
-                  <span class="label-text fw-bold">Search Your Product</span>
-                  <span class="label-text-alt fw-bold">Press<kbd class="kbd kbd-sm">Enter</kbd>
+                  <span class="label-text font-bold">Search Your Product</span>
+                  <span class="label-text-alt font-bold">Press<kbd class="kbd kbd-sm">Enter</kbd>
                   </span>
                 </label>
-                <input type="text" id="search-field" placeholder="Search here" class="input input-bordered w-100 max-w-xs" />
+                <input type="text" id="search-field" placeholder="Search your product here.." class="font-semibold input input-bordered w-100 max-w-xs" />
               </div>
+        </section>
+        
+        <section class="progress-section">
+            <!--==|Progress Bar|==-->
+            <progress id="spinner" class="progress w-full hidden"></progress>
         </section>
     </header>
     <!--Header Section End-->
     
     <!--Main Section Start-->
-    <main class="container-fluid ">
+    <main class="container-fluid px-12 pb-20 pt-10" >
+        <!--Product Not Found start-->
+        <section class="not-flound">
+            <div id="product-not-found" class="product-not-found">
 
-        <!--All product-->
+            </div>
+        </section>
+        <!--Product Not Found End-->
+
+        <!--==| All product Section Start |==-->
         <section class="nav-menu">
-            <div class="flex">
+            <div class="flex gap-5">
                 <!--Category Menu-->
                 <div class="flex-none">
                     <ul id="category-item" class="menu bg-secondary text-secondary-content p-2 rounded-box">
 
                     </ul>
                 </div>
-                <div id="product-container" class="grow grid grid-cols-4 gap-4">
+                <div id="product-container" class="grow grid grid-cols-4 gap-5">
                   
                 </div>
               </div>
         </section>
+        <!--==| All product Section Start |==-->
+
+        <!--==| Modal Section Start |==-->
+        <section class="modal-section">
+            <div class="modal-lg">
+                <!-- Put this part before body tag -->
+                <input type="checkbox" id="my-modal-3" class="modal-toggle modal-lg" />
+                <div class="modal modal-lg">
+                <div class="modal-box relative">
+                    <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <!--Modal Body-->
+                    <div id="modal-body" class="modal-body">
+
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!--==| Modal Section End |==-->
     </main>
     <!--Main Section End-->
 
     <!--Footer Section Start-->
+    <footer class="py-4 bg-slate-300 mx-auto">
+        <section class="footer-section ">
+            <div class="footer-text">
+                <p class="text-center mb-0 pb-0 font-semibold">Copyright ©, 2022 | All Rights Reserved by Obaedul Islam</p>
+            </div>
+        </section>
+    </footer>
     <!--Footer Section End-->
 
     <!--Javascript Integration Start-->
